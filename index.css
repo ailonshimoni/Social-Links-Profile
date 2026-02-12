@@ -1,0 +1,154 @@
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v20-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v20-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/inter-v20-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+
+
+/* || RESET */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img,
+picture,
+video {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border-color: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --white: hsl(0, 0%, 100%);
+  --gray-700: hsl(0, 0%, 20%);
+  --gray-800: hsl(0, 0%, 12%);
+  --gray-900: hsl(0, 0%, 8%);
+}
+
+
+
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--gray-900);
+  color: hsl(0, 0%, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+}
+
+
+
+.card {
+  background-color: var(--gray-800);
+  padding: 1.8rem;
+  border-radius: 10px;
+  width: 17.5rem;
+}
+
+.card__image {
+  margin: 0 auto;
+  border-radius: 5rem;
+}
+
+
+.card__header-top {
+  margin-top: 1rem;
+  line-height: 1.5rem;
+}
+
+
+.card__name {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.card__location {
+  font-size: 0.7rem;
+  color: var(--green);
+  font-weight: 700;
+}
+
+.card__description {
+  font-size: 0.7rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.card__links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 0.8rem;
+}
+
+.card__link {
+  display: block;
+  background-color: var(--gray-700);
+  padding: 0.65rem;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 0.7rem;
+}
+
+.card__link:hover {
+  background-color: var(--green);
+  color: var(--gray-900);
+  cursor: pointer;
+}
